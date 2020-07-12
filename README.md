@@ -2,7 +2,7 @@
 Web applications written by me.
 
 # REST
-Application demonstrating basic principles of REST and EF. The application creates basic API endpoints to perform CRUD operations on "ShopItem" entity.
+Application demonstrating basic principles of REST and EF. The application creates basic API endpoints to perform CRUD operations on **ShopItem** entity.
 
 ## Usage
 The solution can be run through visual studio and requires 
