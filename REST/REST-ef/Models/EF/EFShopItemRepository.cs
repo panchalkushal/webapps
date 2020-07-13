@@ -56,8 +56,7 @@ namespace REST_ef.Models.EF
             {
                 context.Items.Remove(dbItem);
                 context.SaveChanges();
-            }            
-            context.SaveChanges();
+            }                        
         }
 
         ShopItem IShopItemRepository.UpdateItem(ShopItem item) => AddItem(item);        

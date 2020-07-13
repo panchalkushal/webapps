@@ -50,7 +50,7 @@ namespace REST_ef.Controllers
             return NotFound();
         }
 
-        [HttpDelete]
+        [HttpDelete("{ItemId}")]
         public void Delete(Guid Itemid) => 
             repository.DeleteItem(Itemid);
     }
