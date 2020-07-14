@@ -26,6 +26,7 @@ namespace REST_ef
             services.AddDbContext<ShopItemDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ShopItemsContext"))); 
             
             services.AddTransient<IShopItemRepository, EFShopItemRepository>();
+            // The following example adds support for controllers and API-related features, but not views or pages. The API template uses this code:
             services.AddControllers();
         }
 
