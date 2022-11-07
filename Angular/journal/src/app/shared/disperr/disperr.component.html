@@ -1,0 +1,4 @@
+<div style="color: red"
+    *ngIf="fc && fc.errors && fc.invalid && (fc.dirty || fc.touched)">
+    <div *ngIf="fc.errors.required">{{ lbl }} is required.</div>
+</div>

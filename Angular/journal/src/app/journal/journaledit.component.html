@@ -1,0 +1,23 @@
+<form [formGroup]="journalEditForm" (ngSubmit)="saveJournalEntry()">
+    <div>
+        <label for="EntryDate">Entry Date: </label>
+        <input id="EntryDate" type="text" formControlName="EntryDate">
+        <disperr [fc]="getFC('EntryDate')" lbl="Entry Date"></disperr>
+    </div>
+    <div>
+        <label for="Category">Category: </label>
+        <input id="Category" type="text" formControlName="Category">
+        <disperr [fc]="getFC('Category')" lbl="Category"></disperr>
+    </div>
+    <div>
+        <label for="SubCategory">Sub Category: </label>
+        <input id="SubCategory" type="text" formControlName="SubCategory">
+    </div>
+    <div>
+        <label for="Entry">Entry: </label>
+        <input id="Entry" type="text" formControlName="Entry">
+    </div>
+    <div>
+        <button type="submit"> Submit </button>
+    </div>
+</form>
